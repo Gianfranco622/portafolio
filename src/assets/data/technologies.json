@@ -16,10 +16,6 @@
     "src": "assets/technologies/sonar.webp"
   },
   {
-    "name": "NestJS",
-    "src": "assets/technologies/nestjs.svg"
-  },
-  {
     "name": "NodeJS",
     "src": "assets/technologies/nodejs.svg"
   },
