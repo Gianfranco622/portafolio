@@ -24,6 +24,10 @@
     "src": "assets/technologies/npm.svg"
   },
   {
+    "name": "Java",
+    "src": "assets/technologies/java.svg"
+  },
+  {
     "name": "HTML 5",
     "src": "assets/technologies/html5.svg"
   },
