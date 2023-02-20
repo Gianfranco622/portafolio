@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676867151145,
+  "timestamp": 1676867337885,
   "index": "/portafolio/index.html",
   "assetGroups": [
     {
@@ -168,7 +168,7 @@
     "/portafolio/assets/technologies/wordpress.png": "507a6ac3a84400172686cec9511965f01b81079a",
     "/portafolio/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/portafolio/home-bg.c17d8f3609226cce.jpg": "a34a9b5b4ec4202192d210956ba91f8244f7e943",
-    "/portafolio/index.html": "1d67688f3e14ed32c4e194197dc38325a6c1c713",
+    "/portafolio/index.html": "1eaa05590268ddf8bbd71de9464cdc35123d0cac",
     "/portafolio/main.24c1aafd6446bf8e.js": "eb3911e0245cf5d11ea82de823046fe736addb32",
     "/portafolio/manifest.webmanifest": "c9235ed302f5498ecd917d5b7257b56d11ecb6c1",
     "/portafolio/polyfills.d91dbfbd857a20b1.js": "061b02278d8132cce38a70aa7b6c07122ae249c8",
