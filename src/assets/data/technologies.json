@@ -12,16 +12,16 @@
     "src": "assets/technologies/angular.svg"
   },
   {
-    "name": "SonarQube",
-    "src": "assets/technologies/sonar.webp"
-  },
-  {
     "name": "NodeJS",
     "src": "assets/technologies/nodejs.svg"
   },
   {
     "name": "NPM",
     "src": "assets/technologies/npm.svg"
+  },
+  {
+    "name": "Express",
+    "src": "assets/technologies/express.svg"
   },
   {
     "name": "Java",
@@ -84,5 +84,4 @@
     "name": "MongoDB",
     "src": "assets/technologies/mongodb.svg"
   }
-
 ]

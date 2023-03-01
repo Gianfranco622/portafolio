@@ -7,6 +7,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { IntersectionObserverService } from '@core/services';
 
+import { Technology } from '@core/interface';
+import technologies from '../../../../../assets/data/technologies.json';
+
 @Component({
   selector: 'app-can-do',
   templateUrl: './can-do.component.html',
@@ -19,6 +22,8 @@ export class CanDoComponent implements AfterViewInit {
   faInfinity = faInfinity;
   @ViewChild('canDo')
   canDo: ElementRef;
+
+  listTechnologies: Technology[] = technologies;
 
   constructor(
     private intersectionObserverService: IntersectionObserverService

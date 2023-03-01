@@ -16,11 +16,10 @@ export class ExperienceComponent implements AfterViewInit {
       period: 'Mayo 2021 - Noviembre 2021',
       jobTitle: 'Practicante de Sistemas',
       activities: [
-        'asd',
-        'asd',
-        'asd',
-        'asd',
-        'asd'
+        'Apoyo en la actualización y mantenimiento de la página web.',
+        'Proporcionar asistencia en el Sistema de Gestión Académica.',
+        'Brindar soporte a los usuarios.',
+        'Mantenimiento de equipos.',
       ],
     }
   ];

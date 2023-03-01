@@ -1,36 +1,42 @@
 <section #about id="about" class="text-gray-600 body-font overflow-hidden visibility-hidden">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-12">
-            <div class="p-12 md:w-1/2 flex flex-col items-start">
-                <span
-                    class="inline-block py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-medium tracking-widest">SOBRE
-                    MI</span>
-                <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 dark:text-slate-200">
-                    Software Developer</h2>
-                <p class="leading-relaxed mb-8 dark:text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quis aspernatur iure, beatae adipisci veniam minima quae excepturi maiores illum iste maxime? Sed eligendi sint quam magnam inventore molestiae. Consequuntur!</p>
+    <div class="container px-5 py-14 mx-auto">
+        
+        <div class="flex flex-wrap w-full mb-12 flex-col items-center text-center">
+            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 text-slate-200">Acerca De Mí</h1>
+        </div>
 
-            </div>
-            <div class="p-12 md:w-1/2 flex flex-col items-start">
-                <span
-                    class="inline-block py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-medium tracking-widest mb-2">Tecnologías
-                    y herramientas</span>
-                <div class="flex flex-wrap ml-2">
-                    <div class="group flex relative" *ngFor="let image of listTechnologies">
-                        <span style="margin-top: 0px;
-                        margin-bottom: 0px;
-                        border-bottom-width: 0px;
-                        bottom: 75px;
-                        left: 75px;
-                        z-index: 9999;
-                        " class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                        -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">{{image.name}}</span>
-                        <img [width]="40" class="m-4" [height]="40" [alt]="image.name" [ngSrc]="image.src" [class]="image.isDark ? 'svg-dark-theme' : ''" />
-
-                    </div>
-
+        <div class="flex flex-wrap -m-4">
+            
+            <div class="p-4 md:w-1/2 flex flex-col items-start">
+                <div class="border-double border-4 border-[#eaad4b] p-6 rounded-lg bg-black/50">
+                    <span class="inline-block py-1 px-2 rounded bg-[#21213b] text-[#eaad4b] text-xs font-medium tracking-widest hover:bg-gradient-to-r from-[#3dcafd] to-[#2ef9ec] hover:text-[#21213b]">Sobre mi</span>
+                    <h2 class="sm:text-3xl text-2xl title-font font-bold mt-4 mb-4 text-slate-200">
+                        Software Developer</h2>
+                    <p class="leading-relaxed mb-8 text-slate-200">Entusiasta de la tecnología, mas concretamente la idea de poder diseñar, programar, dar mejora y aplicar soluciones mediante el uso de la tecnología. Me interesa mucho el porque de las cosas, descubrir cosas nuevas y aprender por mi cuenta. Por ello, me apasiona el hecho de estudiar en el mundo de la programación y diseño de software para crear soluciones innovadoras que faciliten la vida de las personas.</p>
                 </div>
-
             </div>
+
+            <div class="p-4 md:w-1/2 flex flex-col items-start">
+                <div class="border-double border-4 border-[#eaad4b] p-6 rounded-lg h-full bg-black/50">
+                    <span
+                        class="inline-block py-1 px-2 rounded bg-[#21213b] text-[#eaad4b] text-xs font-medium tracking-widest mb-2 hover:bg-gradient-to-r from-[#3dcafd] to-[#2ef9ec] hover:text-[#21213b]">Tecnologías
+                        y herramientas</span>
+                    <div class="flex flex-wrap ml-2">
+                        <div class="group flex relative hover:bg-gradient-to-r from-purple-500 to-sky-700" *ngFor="let image of listTechnologies">
+                            <span style="margin-top: 0px;
+                            margin-bottom: 0px;
+                            border-bottom-width: 0px;
+                            bottom: 75px;
+                            left: 75px;
+                            z-index: 9999;
+                            " class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">{{image.name}}</span>
+                            <img [width]="50" class="m-4" [height]="50" [alt]="image.name" [ngSrc]="image.src" [class]="image.isDark ? 'svg-dark-theme' : ''" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>
