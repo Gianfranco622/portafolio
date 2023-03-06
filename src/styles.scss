@@ -13,7 +13,7 @@
 @import "./../src/app/styles/partials/scrollbar";
 @import "./../src/app/styles/partials/forms";
 @import "./../src/app/styles/partials/animations";
-
+@import "./../src/app/styles/partials/colors";
 
 * {
   margin: 0;
@@ -40,8 +40,8 @@ body {
 :root {
   --header-height: 64px;
 
-  --prim: hsla(230, 80%, 15%, 0.5);
-  --sec: hsla(260, 95%, 15%, 0.5);
+  --prim: hsla(230, 90%, 10%, 0.7);
+  --sec: hsla(260, 95%, 10%, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
