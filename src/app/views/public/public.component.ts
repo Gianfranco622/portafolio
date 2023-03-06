@@ -1,4 +1,5 @@
-import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import {
   AboutComponent,
   CanDoComponent,
@@ -19,8 +20,27 @@ export class PublicComponent {
 
   isScrolling: boolean = false;
 
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private renderer2: Renderer2
+  ) {}
+
+  // OWASP WEB TOP 10
+  // Avoid XSS vulnerabilities
+  setBackground() {
+    const bodyElement = this.document.getElementsByTagName('body')[0];
+    this.renderer2.addClass( bodyElement, 'azul')
+  }
+
   handleScroll() {
     if (!this.isScrolling) {
+      this.setBackground();
+      this.loadAllComponents();
+    }
+    this.isScrolling = true;
+  }
+
+  private loadAllComponents() {
       this.loadCanDo();
       this.loadAbout();
       this.loadExperience();
@@ -28,9 +48,6 @@ export class PublicComponent {
       this.loadContact();
       this.loadFooter();
     }
-
-    this.isScrolling = true;
-  }
 
   private loadCanDo() {
     this.component.createComponent(CanDoComponent);
