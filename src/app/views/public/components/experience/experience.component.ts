@@ -9,17 +9,18 @@ import { IntersectionObserverService } from '@core/services';
   styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent implements AfterViewInit {
+
   listExperience: Experience[] = [
     {
       id: 'experience-1',
       company: 'Universidad Nacional del Callao',
-      period: 'Mayo 2021 - Noviembre 2021',
-      jobTitle: 'Practicante de Sistemas',
+      period: 'experiences.period',
+      jobTitle: 'experiences.jobtitle',
       activities: [
-        'Apoyo en la actualización y mantenimiento de la página web.',
-        'Proporcionar asistencia en el Sistema de Gestión Académica.',
-        'Brindar soporte a los usuarios.',
-        'Mantenimiento de equipos.',
+        'experiences.activity.1',
+        'experiences.activity.2',
+        'experiences.activity.3',
+        'experiences.activity.4',
       ],
     }
   ];

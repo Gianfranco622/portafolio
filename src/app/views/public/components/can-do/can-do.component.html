@@ -3,7 +3,7 @@
     <div class="container px-5 py-14 mx-auto">
         
         <div class="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 color-title">¿Qué puedo hacer?
+            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 color-title"> {{ 'can-do.title' | translate }}
             </h1>
         </div>
 
@@ -16,7 +16,7 @@
                         <fa-icon class="fa-xl" [icon]="faLaptop"></fa-icon>
                     </div>
                     <h2 class="text-lg font-bold title-font mb-2 color-subtitle">Web Apps</h2>
-                    <p class="leading-relaxed text-base text-slate-200">Creación de aplicaciones web amigables y escalables</p>
+                    <p class="leading-relaxed text-base color-content"> {{ 'can-do.content1' | translate }} </p>
                 </div>
             </div>
 
@@ -27,8 +27,7 @@
                         <fa-icon class="fa-xl" [icon]="faMobile"></fa-icon>
                     </div>
                     <h2 class="text-lg font-bold title-font mb-2 color-subtitle">PWA</h2>
-                    <p class="leading-relaxed text-base text-slate-200">Creación de aplicaciones web instalables en dispositivos
-                        moviles</p>
+                    <p class="leading-relaxed text-base color-content"> {{ 'can-do.content2' | translate }} </p>
                 </div>
             </div>   
 

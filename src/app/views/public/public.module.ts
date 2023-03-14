@@ -13,6 +13,15 @@ import {
 } from './components';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { CanDoComponent } from './components/can-do/can-do.component';
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -24,6 +33,7 @@ import { CanDoComponent } from './components/can-do/can-do.component';
     FooterComponent,
     StudiesComponent,
     CanDoComponent,
+    LanguageSelectorComponent,
   ],
   imports: [
     CommonModule,
@@ -31,6 +41,14 @@ import { CanDoComponent } from './components/can-do/can-do.component';
     NgOptimizedImage,
     FontAwesomeModule,
     PublicRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
 })
 export class PublicModule {}

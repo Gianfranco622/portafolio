@@ -1,0 +1,51 @@
+{
+  "language-selector": "Language",
+  "home": {
+    "content": "Bachelor of Systems Engineering. I seek to apply theoretical and practical knowledge during my academic training.",
+    "contact": "Contact Me"
+  },
+  "can-do": {
+    "title": "What I can do?",
+    "content1": "Creation of friendly and scalable web applications",
+    "content2": "Creation of web applications installable on mobile devices"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle1": "About myself",
+    "content": "Technology enthusiast, more specifically the idea of being able to design, program, improve and apply solutions through the use of technology. I am very interested in the why of things, discovering new things and learning on my own. For this reason, I am passionate about studying in the world of programming and software design to create innovative solutions that make people's lives easier.",
+    "subtitle2": "Technologies and tools"
+  },
+  "experiences": {
+    "title": "Experience",
+    "period": "May 2021 - November 2021",
+    "jobtitle": "Systems Intern",
+    "activity": {
+      "1": "Support in updating and maintaining the website. Design of a new WordPress website model and data migration.",
+      "2": "Provide assistance in the University's Academic Management System. Entry and correction of data to the system.",
+      "3": "Equipment maintenance. Software update and review of the equipment used.",
+      "4": "Provide support to users. Creation of user manuals. Virtual attention on incidents. Training for platform users."
+    }
+    
+  },
+  "studies": {
+    "title": "Studies",
+    "name": {
+      "1": "Systems Engineer"
+    },
+    "duration": {
+      "1": "July 2016 - August 2021",
+      "2": "November 2022 - December 2022",
+      "3": "December 2022",
+      "4": "January 2022"
+    },
+    "description": "Graduate belonging to the upper fifth"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "content": {
+      "1": "Do you have any idea? Tell me by WhatsApp",
+      "2": "Do you have any idea?, tell me by mail",
+      "3": "You can also find my Linkedin profile"
+    }
+  }
+}

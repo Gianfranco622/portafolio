@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import {
   AboutComponent,
   CanDoComponent,
@@ -27,6 +28,7 @@ export class PublicComponent {
 
   // OWASP WEB TOP 10
   // Avoid XSS vulnerabilities
+  
   setBackground() {
     const bodyElement = this.document.getElementsByTagName('body')[0];
     this.renderer2.addClass( bodyElement, 'azul')

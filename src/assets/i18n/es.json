@@ -1,0 +1,51 @@
+{
+  "language-selector": "idioma",
+  "home": {
+    "content": "Bachiller de Ingeniería de Sistemas. Busco aplicar los conocimientos teóricos y prácticos durante mi formación académica.",
+    "contact": "Contactame"
+  },
+  "can-do": {
+    "title": "¿Qué puedo hacer?",
+    "content1": "Creación de aplicaciones web amigables y escalables",
+    "content2": "Creación de aplicaciones web instalables en dispositivos moviles"
+  },
+  "about": {
+    "title": "Acerca De Mí",
+    "subtitle1": "Sobre mi",
+    "content": "Entusiasta de la tecnología, mas concretamente la idea de poder diseñar, programar, dar mejora y aplicar soluciones mediante el uso de la tecnología. Me interesa mucho el porque de las cosas, descubrir cosas nuevas y aprender por mi cuenta. Por ello, me apasiona el hecho de estudiar en el mundo de la programación y diseño de software para crear soluciones innovadoras que faciliten la vida de las personas.",
+    "subtitle2": "Tecnologías y herramientas"
+  },
+  "experiences": {
+    "title": "Experiencia",
+    "period": "Mayo 2021 - Noviembre 2021",
+    "jobtitle": "Practicante de Sistemas",
+    "activity": {
+      "1": "Apoyo en la actualización y mantenimiento de la página web. Diseño de un nuevo modelo de sitio web en WordPress y migración de datos.",
+      "2": "Proporcionar asistencia en el Sistema de Gestión Académica de la Universidad. Ingreso y corrección de datos al sistema.",
+      "3": "Mantenimiento de equipos. Actualización de software y revisión de los equipos utilizados.",
+      "4": "Brindar soporte a los usuarios. Creación de manuales de usuarios. Atención virtual sobre incidencias. Capacitaciones a usuarios de la plataforma."
+    }
+    
+  },
+  "studies": {
+    "title": "Estudios",
+    "name": {
+      "1": "Ingenieria de Sistemas"
+    },
+    "duration": {
+      "1": "Julio 2016 - Agosto 2021",
+      "2": "Noviembre 2022 - Diciembre 2022",
+      "3": "Diciembre 2022",
+      "4": "Enero 2022"
+    },
+    "description": "Egresado perteneciente al quinto superior"
+  },
+  "contact": {
+    "title": "Contactame",
+    "content": {
+      "1": "¿ Tienes alguna idea ?, cuentamela por WhatsApp",
+      "2": "¿ Tienes alguna idea ?, cuentamela por correo",
+      "3": "Tambien puedes encontrar mi perfil de Linkedin"
+    }
+  }
+}

@@ -7,6 +7,7 @@ import {
   Output,
   EventEmitter,
   Inject,
+  OnInit,
 } from '@angular/core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Typewriter from 't-writer.js';
@@ -16,13 +17,20 @@ import Typewriter from 't-writer.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   faWhatsApp = faWhatsapp;
+  @ViewChild('videoPlayer') videoplayer: ElementRef;
   @ViewChild('asTitle') asTitle: ElementRef;
   @Output()
   isLoad = new EventEmitter<void>();
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.videoplayer.nativeElement.play();
+    }, 2500);
+  }
 
   ngAfterViewInit(): void {
     this.initEffect();

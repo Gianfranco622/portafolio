@@ -12,30 +12,28 @@ export class StudiesComponent implements AfterViewInit {
   listStudies: Study[] = [
     {
       id: 'study-1',
-      grade: 'Bachiller',
       institution: 'Universidad Nacional del Callao',
-      name: 'Ingenieria de Sistemas',
-      duration: 'Julio 2016 - Agosto 2021',
-      description:
-        'Egresado perteneciente al quinto superior',
+      name: 'studies.name.1',
+      duration: 'studies.duration.1',
+      description: 'studies.description',
     },
     {
       id: 'study-2',
       institution: 'Udemy',
       name: 'Angular',
-      duration: 'Noviembre 2022 - Diciembre 2022',
+      duration: 'studies.duration.2',
     },
     {
       id: 'study-3',
       institution: 'HackerRank',
       name: 'Angular(Basic)',
-      duration: 'Diciembre 2022',
+      duration: 'studies.duration.3',
     },
     {
       id: 'study-4',
       institution: 'CertiProf',
       name: 'Scrum Foundation Profesional Certificate SFPC',
-      duration: 'Enero 2022',
+      duration: 'studies.duration.4',
     }
   ];
 

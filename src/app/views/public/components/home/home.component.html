@@ -1,33 +1,35 @@
 <div class="home">
     
+    <app-language-selector class="home-content"></app-language-selector>
+
     <div class="home-video">
-        <video [muted]="'muted'"autoplay loop plays-inline>
+        <video preload="none" [muted]="'muted'" poster="/assets/images/quanta.jpg" loop plays-inline #videoPlayer>
             <source src="../../../../../assets/images/quanta-bg.mp4" type="video/mp4">
         </video>
     </div>
 
     <div class="home-content">
-
+        
         <div class="mx-auto max-w-3xl pt-20 pb-16 sm:pt-48 sm:pb-40 text-center">
             <div>
                 <div>
                     <h1 #asTitle
-                        class="outline-text-h1 text-4xl text-slate-200 font-bold tracking-tight sm:text-center sm:text-7xl text-gray-300 animate__animated animate__fadeInUp animation-2">
+                        class="outline-text-h1 text-4xl font-bold tracking-tight sm:text-center sm:text-7xl color-title animate__animated animate__fadeInUp animation-2">
                     </h1>
-                    <p class="outline-text-p font-bold text-white text-base mt-6 leading-6 sm:text-center sm:text-xl sm:leading-8 text-slate-100">
-                        Bachiller de Ingeniería de Sistemas. Busco aplicar los conocimientos teóricos y prácticos durante mi formación académica.
+                    <p class="outline-text-p font-bold text-base mt-6 leading-6 sm:text-center sm:text-xl sm:leading-8 color-content">
+                        {{ 'home.content' | translate }}
                     </p>
                     <br>
                     <br>
                     <a href="https://wa.me/51951898996?text=Hola%20quiero%20contactarme%20" target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-block rounded-lg bg-transparent px-4 py-1.5 text-base font-semibold sm:text-2xl leading-7 text-white shadow-sm ring-2 ring-white hover:bg-gradient-to-r from-sky-500 to-purple-500 hover:ring-[#B9FBFC]">
-                        <fa-icon class="fa-lg" [icon]="faWhatsApp"></fa-icon>&nbsp; Contactame
+                        class="inline-block rounded-lg bg-transparent px-4 py-1.5 text-base font-semibold sm:text-2xl leading-7 color-content shadow-sm ring-2 ring-white hover:bg-gradient-to-r from-sky-500 to-purple-500 hover:ring-[#B9FBFC]">
+                        <fa-icon class="fa-lg" [icon]="faWhatsApp"></fa-icon>&nbsp; {{ 'home.contact' | translate }}
                     </a>
 
                     <div class="scrolling-down" (click)="goToSection('can-do')">
                         <div aria-label="go to about section" class=" cursor-pointer">
-                            <div class="outline-text-h1 text-slate-100 hover:text-violet-600 gap-2 inline-flex">
+                            <div class="outline-text-h1 text-slate-200 hover:text-violet-500 gap-2 inline-flex">
                                 <svg width="1em" height="1em" viewBox="0 0 15 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto">
                                     <path

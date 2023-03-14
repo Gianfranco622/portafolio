@@ -1,7 +1,7 @@
 <section #experience id="experience" class="overflow-hidden">
     <div class="container px-5 py-14 mx-auto">
         <div class="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 text-slate-200">Experiencia</h1>
+            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 text-slate-200"> {{ 'experiences.title' | translate }} </h1>
         </div>
         <ol class="ml-6 relative border-l-4 color-border2">
             <li class="mb-10 visibility-hidden" [id]="experience.id" *ngFor="let experience of listExperience">
@@ -15,20 +15,19 @@
                     </svg>
                 </span>
                 <h3 class="flex items-center mb-1 text-lg font-semibold text-white fixed-container">
-                    {{experience.jobTitle}}
+                    {{experience.jobTitle | translate}}
                     <span
                         class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3 color-square">
                         {{experience.company}}
                     </span>
                 </h3>
-                <time
-                    class="block mb-2 text-sm font-normal leading-none text-gray-400 fixed-container">
-                    {{experience.period}}</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 fixed-container">
+                    {{experience.period | translate }}
+                </time>
 
                 <div *ngFor="let activity of experience.activities">
-
                     <p class="mb-4 text-base font-normal text-gray-200">
-                        <span class="fixed-span">▪</span> {{activity}}
+                        <span class="fixed-span">▪</span> {{activity | translate}}
                     </p>
                 </div>
             </li>

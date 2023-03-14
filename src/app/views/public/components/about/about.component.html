@@ -2,25 +2,24 @@
     <div class="container px-5 py-14 mx-auto">
         
         <div class="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 color-title">Acerca De Mí</h1>
+            <h1 class="outline-text-h1 sm:text-5xl text-4xl font-semibold title-font mb-2 color-title"> {{ 'about.title' | translate }} </h1>
         </div>
 
         <div class="flex flex-wrap -m-4">
             
             <div class="p-4 md:w-1/2 flex flex-col items-start">
-                <div class="border-double border-4 p-6 rounded-lg color-border">
-                    <span class="inline-block py-1 px-2 rounded text-xs font-medium tracking-widest color-square">Sobre mi</span>
+                <div class="border-double border-4 p-6 rounded-lg color-border h-full">
+                    <span class="inline-block py-1 px-2 rounded text-xs font-medium tracking-widest color-square"> {{ 'about.subtitle1' | translate }} </span>
                     <h2 class="sm:text-3xl text-2xl title-font font-bold mt-4 mb-4 color-title">
                         Software Developer</h2>
-                    <p class="leading-relaxed mb-8 color-title">Entusiasta de la tecnología, mas concretamente la idea de poder diseñar, programar, dar mejora y aplicar soluciones mediante el uso de la tecnología. Me interesa mucho el porque de las cosas, descubrir cosas nuevas y aprender por mi cuenta. Por ello, me apasiona el hecho de estudiar en el mundo de la programación y diseño de software para crear soluciones innovadoras que faciliten la vida de las personas.</p>
+                    <p class="leading-relaxed mb-8 color-content"> {{ 'about.content' | translate }} </p>
                 </div>
             </div>
 
             <div class="p-4 md:w-1/2 flex flex-col items-start">
-                <div class="border-double border-4 p-6 rounded-lg h-full color-border">
+                <div class="border-double border-4 p-6 rounded-lg color-border">
                     <span
-                        class="inline-block py-1 px-2 rounded text-xs font-medium tracking-widest mb-2 color-square">Tecnologías
-                        y herramientas</span>
+                        class="inline-block py-1 px-2 rounded text-xs font-medium tracking-widest mb-2 color-square"> {{ 'about.subtitle2' | translate }} </span>
                     <div class="flex flex-wrap ml-2">
                         <div class="group flex relative rounded-full hover:bg-gradient-to-r from-slate-800 to-neutral-800" *ngFor="let image of listTechnologies">
                             <span class="technology-image group-hover:opacity-100 transition-opacity px-1 text-sm text-gray-100 bg-gray-800 rounded-md absolute left-1/2 
