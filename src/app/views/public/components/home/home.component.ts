@@ -27,10 +27,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      const videoPlayerElement = this.videoplayer.nativeElement as HTMLVideoElement;
-      videoPlayerElement.play();
-    }, 4_000);
+    // setTimeout(() => {
+    //   const videoPlayerElement = this.videoplayer.nativeElement as HTMLVideoElement;
+    //   videoPlayerElement.play();
+    // }, 4_000);
+  }
+  
+  isLoadPreview() {
+    console.log('isLoadPreview');
+  }
+
+  canPlayVideo(): void {
+    console.log('canPlayVideo');
+    const videoPlayerElement = this.videoplayer.nativeElement as HTMLVideoElement;
+    videoPlayerElement.play();
   }
 
   ngAfterViewInit(): void {
