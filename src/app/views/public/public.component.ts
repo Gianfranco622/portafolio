@@ -1,6 +1,5 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import {
   AboutComponent,
   CanDoComponent,
