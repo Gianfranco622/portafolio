@@ -3,7 +3,7 @@
     <app-language-selector class="home-content"></app-language-selector>
 
     <div class="home-video">
-        <video (loadeddata)="isLoadPreview()" (canplaythrough)="canPlayVideo()" [muted]="'muted'" poster="/assets/images/quanta11.webp" loop plays-inline #videoPlayer>
+        <video (canplaythrough)="canPlayVideo()" [muted]="'muted'" poster="/assets/images/quanta11.webp" loop plays-inline #videoPlayer>
             <source src="../../../../../assets/images/quanta-bg.mp4" type="video/mp4">
         </video>
     </div>

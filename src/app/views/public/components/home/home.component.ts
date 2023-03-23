@@ -7,7 +7,6 @@ import {
   Output,
   EventEmitter,
   Inject,
-  OnInit,
 } from '@angular/core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Typewriter from 't-writer.js';
@@ -17,7 +16,7 @@ import Typewriter from 't-writer.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements AfterViewInit {
   faWhatsApp = faWhatsapp;
   @ViewChild('videoPlayer') videoplayer: ElementRef;
   @ViewChild('asTitle') asTitle: ElementRef;
@@ -26,19 +25,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
-  ngOnInit(): void {
-    // setTimeout(() => {
-    //   const videoPlayerElement = this.videoplayer.nativeElement as HTMLVideoElement;
-    //   videoPlayerElement.play();
-    // }, 4_000);
-  }
-  
-  isLoadPreview() {
-    console.log('isLoadPreview');
-  }
-
   canPlayVideo(): void {
-    console.log('canPlayVideo');
     const videoPlayerElement = this.videoplayer.nativeElement as HTMLVideoElement;
     videoPlayerElement.play();
   }
